@@ -88,7 +88,7 @@ for file_path in files:
     api.upload_file(
         path_or_fileobj=file_path,
         path_in_repo=file_path.split("/")[-1],
-        repo_id="<---repo id---->/tourism-dataset",
+        repo_id="ananttripathiak/tourism-dataset",
         repo_type="dataset",
     )
     print(f"Uploaded {file_path} to Hugging Face")
