@@ -11,7 +11,7 @@ import os
 
 # Define constants for the dataset and output paths
 api = HfApi(token=os.getenv("HF_TOKEN"))
-DATASET_PATH = "hf://datasets/<---repo id---->/tourism-dataset/tourism.csv"
+DATASET_PATH = "hf://datasets/ananttripathiak/tourism-dataset/tourism.csv"
 df = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 print(f"Dataset shape: {df.shape}")
