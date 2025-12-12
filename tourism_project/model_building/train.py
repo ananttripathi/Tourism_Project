@@ -166,7 +166,7 @@ with mlflow.start_run():
     print(f"Model logged to MLflow")
 
     # Upload to Hugging Face
-    repo_id = "<---repo id---->/tourism-prediction-model"
+    repo_id = "ananttripathiak/tourism-prediction-model"
     repo_type = "model"
 
     # Step 1: Check if the repository exists
