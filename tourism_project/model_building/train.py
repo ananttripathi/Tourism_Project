@@ -25,10 +25,10 @@ mlflow.set_experiment("tourism-package-prediction")
 api = HfApi()
 
 # Load the preprocessed data from Hugging Face
-Xtrain_path = "hf://datasets/<---repo id---->/tourism-dataset/Xtrain.csv"
-Xtest_path = "hf://datasets/<---repo id---->/tourism-dataset/Xtest.csv"
-ytrain_path = "hf://datasets/<---repo id---->/tourism-dataset/ytrain.csv"
-ytest_path = "hf://datasets/<---repo id---->/tourism-dataset/ytest.csv"
+Xtrain_path = "hf://datasets/ananttripathiak/tourism-dataset/Xtrain.csv"
+Xtest_path = "hf://datasets/ananttripathiak/tourism-dataset/Xtest.csv"
+ytrain_path = "hf://datasets/ananttripathiak/tourism-dataset/ytrain.csv"
+ytest_path = "hf://datasets/ananttripathiak/tourism-dataset/ytest.csv"
 
 print("Loading preprocessed data...")
 Xtrain = pd.read_csv(Xtrain_path)
