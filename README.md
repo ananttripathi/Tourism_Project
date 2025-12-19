@@ -8,7 +8,6 @@ This project implements an end-to-end MLOps pipeline for predicting whether cust
 
 - **Hugging Face Spaces**: [View Live](https://huggingface.co/spaces/ananttripathiak/wellness-tourism-prediction) 
 
-https://huggingface.co/spaces/ananttripathiak/wellness-tourism-prediction
 ## 🗂️ Project Structure
 
 ```
