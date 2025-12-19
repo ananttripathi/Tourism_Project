@@ -4,6 +4,11 @@
 
 This project implements an end-to-end MLOps pipeline for predicting whether customers will purchase the **Wellness Tourism Package** from "Visit with Us" travel company.
 
+## 🚀 Live Demo
+
+- **Hugging Face Spaces**: [View Live](https://huggingface.co/spaces/ananttripathiak/wellness-tourism-prediction) 
+
+https://huggingface.co/spaces/ananttripathiak/wellness-tourism-prediction
 ## 🗂️ Project Structure
 
 ```
