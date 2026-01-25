@@ -10,7 +10,7 @@ jobs:
   register-dataset:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Dependencies
         run: pip install -r tourism_project/requirements.txt
       - name: Upload Dataset to Hugging Face Hub
@@ -22,7 +22,7 @@ jobs:
     needs: register-dataset
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Dependencies
         run: pip install -r tourism_project/requirements.txt
       - name: Run Data Preparation
@@ -31,11 +31,11 @@ jobs:
         run: python tourism_project/model_building/prep.py
 
 
-  model-traning:
+  model-training:
     needs: data-prep
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Dependencies
         run: pip install -r tourism_project/requirements.txt
       - name: Start MLflow Server
@@ -50,9 +50,9 @@ jobs:
 
   deploy-hosting:
     runs-on: ubuntu-latest
-    needs: [model-traning,data-prep,register-dataset]
+    needs: [model-training,data-prep,register-dataset]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Dependencies
         run: pip install -r tourism_project/requirements.txt
       - name: Push files to Frontend Hugging Face Space

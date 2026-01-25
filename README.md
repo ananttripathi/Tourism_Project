@@ -6,7 +6,20 @@ This project implements an end-to-end MLOps pipeline for predicting whether cust
 
 ## 🚀 Live Demo
 
-- **Hugging Face Spaces**: [View Live](https://huggingface.co/spaces/ananttripathiak/wellness-tourism-prediction) 
+- **Hugging Face Spaces**: [View Live](https://huggingface.co/spaces/ananttripathiak/wellness-tourism-prediction)
+
+## ⚡ Quick Start
+
+```bash
+git clone https://github.com/ananttripathi/Tourism_Project.git
+cd Tourism_Project
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r tourism_project/requirements.txt
+cd tourism_project/deployment && streamlit run app.py
+```
+
+Requires a trained model (see [Deploying via GitHub Actions](#-deploying-via-github-actions) or [Running Locally](#-running-locally)). Or try the [Live Demo](https://huggingface.co/spaces/ananttripathiak/wellness-tourism-prediction) first.
 
 ## 🗂️ Project Structure
 
@@ -116,9 +129,9 @@ Replace `<---repo id---->` with your Hugging Face username in the following file
 ### 🔧 Installation
 
 ```bash
-# Clone your GitHub repository
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+# Clone the repository
+git clone https://github.com/ananttripathi/Tourism_Project.git
+cd Tourism_Project
 
 # Install dependencies
 pip install -r tourism_project/requirements.txt
@@ -281,9 +294,13 @@ All experiments are tracked using MLflow:
 
 This MLOps pipeline was developed as part of the Advanced Machine Learning and MLOps course assignment.
 
+**Co-author:** [ananttripathiak](mailto:ananttripathiak@gmail.com)
+
 ## 📄 License
 
-This project is for educational purposes as part of the course assignment.
+This project is licensed under the [MIT License](LICENSE).
+
+**Suggested GitHub topics:** `mlops` `machine-learning` `xgboost` `streamlit` `huggingface` `github-actions` `docker` `wellness-tourism`
 
 ---
 
