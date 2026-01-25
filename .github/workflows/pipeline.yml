@@ -31,11 +31,11 @@ jobs:
         run: python tourism_project/model_building/prep.py
 
 
-  model-traning:
+  model-training:
     needs: data-prep
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Dependencies
         run: pip install -r tourism_project/requirements.txt
       - name: Start MLflow Server
